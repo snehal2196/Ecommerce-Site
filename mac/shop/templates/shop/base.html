@@ -11,7 +11,13 @@
 
     <title>{% block title %} {% endblock title %}- WoodCart</title>
       <style>
-        {% block css %} {% endblock css %}
+        {% block css %} 
+         footer{
+          position:fixed;
+          bottom:0;
+          width:100%;
+        }
+        {% endblock css %}
   </style>
   </head>
   <body>
@@ -78,9 +84,9 @@ $(document).ready(function(){
 </script>
     <footer class="bg-light text-center text-lg-start">
   <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+  <div class="text-center p-3" style="background-color: black;">
     © {% now "Y" %} Copyright:
-    <a class="text-dark" href="/">WoodCart.in</a>
+    <a class="text-white" href="/">WoodCart.in</a>
   </div>
   <!-- Copyright -->
 </footer>
