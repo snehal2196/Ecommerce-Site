@@ -1,0 +1,59 @@
+{% extends 'shop/base.html' %}
+
+{% block title %} Product{% endblock %}
+
+{% block body %}
+<!--Section: Block Content-->
+<div class="container my-3">
+<section class="mb-5">
+
+    <div class="row">
+      <div class="col-md-6 mb-4 mb-md-0">
+  
+        <div id="mdb-lightbox-ui"></div>
+  
+        <div class="mdb-lightbox">
+  
+          <div class="row product-gallery mx-1">
+  
+            <div class="col-12 mb-0">
+              <figure class="view overlay rounded z-depth-1 main-img">
+                <a href="/media/{{ product.image }}"
+                  data-size="710x823">
+                  <img src="/media/{{ product.image }}"
+                    class="img-fluid z-depth-1 " height="400px" width="400px">
+                </a>
+              </figure>
+            
+          
+            </div>
+  
+          </div>
+  
+        </div>
+  
+      </div>
+      <div class="col-md-6">
+  
+        <h5>{{ product.product_name }}</h5>
+        <p class="mb-2 text-muted text-uppercase small">{{ product.category }}</p>
+     
+        <p><span class="mr-1"><strong>Rs. {{ product.price }}</strong></span></p>
+        <p class="pt-1">{{ product.product_desc }}</p>
+       
+        <hr>
+        <div class="table-responsive mb-2">
+         
+        </div>
+        <button type="button" class="btn btn-primary btn-md mr-1 mb-2">Buy now</button>
+        <button type="button" class="btn btn-light btn-md mr-1 mb-2"><i
+            class="fas fa-shopping-cart pr-2"></i>Add to cart</button>
+      </div>
+    </div>
+  
+  </section>
+  </div>
+ 
+
+
+{% endblock %}
