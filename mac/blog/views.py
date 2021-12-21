@@ -6,7 +6,8 @@ from .models import Blogpost
 def index(request):
     posts = Blogpost.objects.all()
     params = {'posts':posts}
-    return render(request, 'blog/index.html',params)
+    return HttpResponse('Under progress')
+    # return render(request, 'blog/index.html',params)
 
 def blogpost(request, id):
     posts = Blogpost.objects.filter(post_id=id)[0]
