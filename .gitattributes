@@ -1,1 +1,7 @@
+<<<<<<< HEAD
 *.* linguist-language=Python
+=======
+*.html linguist-detectable=false
+*.python linguist-detectable=true
+
+>>>>>>> 27945651aa4e67be2faaffc2813c1a1ea00499f3

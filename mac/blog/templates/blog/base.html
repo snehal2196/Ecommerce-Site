@@ -11,7 +11,13 @@
 
     <title>{% block title %} {% endblock title %}- WoodCart</title>
       <style>
-        {% block css %} {% endblock css %}
+        {% block css %} 
+        footer{
+          position:fixed;
+          bottom:0;
+          width:100%;
+        }
+        {% endblock css %}
   </style>
 
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v12.0" nonce="HUjRYpgw"></script>
@@ -78,5 +84,14 @@ $(document).ready(function(){
 
 
 </script>
+ <footer class="bg-light text-center text-lg-start mt-4">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: black;color:white">
+    © {% now "Y" %} Copyright:
+    <a class="text-white" href="/" >WoodCart.in</a>
+  </div>
+  <!-- Copyright -->
+</footer>
   </body>
+
 </html>
